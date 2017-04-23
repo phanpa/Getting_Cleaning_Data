@@ -1,9 +1,9 @@
 ==============================================================================
-#A code book that describes the variables, the data, and any transformations
-#or work that you performed to clean up the data called CodeBook.md
+A code book that describes the variables, the data, and any transformations
+or work that you performed to clean up the data called CodeBook.md
 ==============================================================================
 
-#The dataset includes the following files:
+The dataset includes the following files:
 ===========================================
 - 'README.txt'
 
@@ -21,12 +21,12 @@
 
 - 'test/y_test.txt': Test labels.
 
-#merge_data: 
+merge_data: 
 ====================================
 Combines the train and test datasets
 ====================================
 
-#Transformations performed on merge_data: 
+Transformations performed on merge_data: 
 ==========================================================================================
 1. Extracts only the measurements on the mean and standard deviation for each measurement. 
 2. Uses descriptive activity names to name the activities in the data set.
@@ -117,12 +117,12 @@ str(merge_data)
  $ fBodyBodyGyroJerkMagStd     : num  -0.991 -0.996 -0.995 -0.995 -0.995 ...
  $ fBodyBodyGyroJerkMagMeanFreq: num  -0.0743 0.1581 0.4145 0.4046 0.0878 ...
 
-#tidy_data: 
+tidy_data: 
 ==========================================================================================================================================
 From the merge_data set, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 ==========================================================================================================================================
 
-#Transformations performed on merge_data: 
+Transformations performed on merge_data: 
 ==================================================================================================
 1. Use dcast function to take the average of merge_data by subject and activity for all variables.
 ==================================================================================================
