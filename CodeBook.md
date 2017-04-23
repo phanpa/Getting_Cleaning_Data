@@ -1,10 +1,9 @@
-==============================================================================
 A code book that describes the variables, the data, and any transformations
 or work that you performed to clean up the data called CodeBook.md
-==============================================================================
+-----
 
 The dataset includes the following files:
-===========================================
+-----
 - 'README.txt'
 
 - 'features_info.txt': Shows information about the variables used on the feature vector.
@@ -22,16 +21,16 @@ The dataset includes the following files:
 - 'test/y_test.txt': Test labels.
 
 merge_data: 
-====================================
+-----
 Combines the train and test datasets
-====================================
+-----
 
 Transformations performed on merge_data: 
-==========================================================================================
+-----
 1. Extracts only the measurements on the mean and standard deviation for each measurement. 
 2. Uses descriptive activity names to name the activities in the data set.
 3. Appropriately labels the data set with descriptive variable names. 
-==========================================================================================
+-----
 
 str(merge_data)
 'data.frame':   10299 obs. of  81 variables:
@@ -118,14 +117,14 @@ str(merge_data)
  $ fBodyBodyGyroJerkMagMeanFreq: num  -0.0743 0.1581 0.4145 0.4046 0.0878 ...
 
 tidy_data: 
-==========================================================================================================================================
+-----
 From the merge_data set, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-==========================================================================================================================================
+-----
 
 Transformations performed on merge_data: 
-==================================================================================================
+-----
 1. Use dcast function to take the average of merge_data by subject and activity for all variables.
-==================================================================================================
+-----
 
 str(tidy_data)
 'data.frame':   181 obs. of  81 variables:
