@@ -1,5 +1,6 @@
 Getting and Cleaning Data > Course Project > run_analysis.R
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set.
+-----
 
 The R script performs the following steps:
 1. Packages Used *** install following packages if not already in use ***
